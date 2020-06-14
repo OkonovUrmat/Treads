@@ -45,6 +45,7 @@
                                 <rect key="frame" x="171.5" y="699" width="71" height="71"/>
                                 <state key="normal" image="startRunningButton"/>
                                 <connections>
+                                    <action selector="locationCenterBtnPressed:" destination="9pv-A4-QxB" eventType="touchUpInside" id="qF4-ly-Hik"/>
                                     <segue destination="hwJ-I5-UYs" kind="presentation" modalPresentationStyle="fullScreen" id="cIO-CY-LQB"/>
                                 </connections>
                             </button>
@@ -75,6 +76,9 @@
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Run" image="tabbar-runIcon" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="mapView" destination="vza-lf-JMN" id="eCQ-FK-bMc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>

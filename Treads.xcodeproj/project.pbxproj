@@ -32,6 +32,7 @@
 		3726E02D24912680006A543E /* Montserrat-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3726E01B24912680006A543E /* Montserrat-ExtraLightItalic.ttf */; };
 		3726E02E24912680006A543E /* Montserrat-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3726E01C24912680006A543E /* Montserrat-BlackItalic.ttf */; };
 		3726E02F24912680006A543E /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3726E01D24912680006A543E /* Montserrat-Light.ttf */; };
+		372B16462496104E006F03E7 /* LocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372B16452496104E006F03E7 /* LocationVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		3726E01B24912680006A543E /* Montserrat-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
 		3726E01C24912680006A543E /* Montserrat-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BlackItalic.ttf"; sourceTree = "<group>"; };
 		3726E01D24912680006A543E /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		372B16452496104E006F03E7 /* LocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 		3726E009249125D1006A543E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				372B16452496104E006F03E7 /* LocationVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				372B16462496104E006F03E7 /* LocationVC.swift in Sources */,
 				3726DFF7249123A9006A543E /* RunLogVC.swift in Sources */,
 				3726DFF5249123A9006A543E /* BeginRunVC.swift in Sources */,
 				3726DFF1249123A9006A543E /* AppDelegate.swift in Sources */,
