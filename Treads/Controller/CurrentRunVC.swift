@@ -32,11 +32,17 @@ class CurrentRunVC: LocationVC {
                     sliderView.center.x = sliderView.center.x + translation.x
                 } else if sliderView.center.x >= (swipeBGImageVIew.center.x + maxAdjust){
                     sliderView.center.x = swipeBGImageVIew.center.x + maxAdjust
+                    //End Run Code
+                    dismiss(animated: true, completion: nil)
                 } else {
                     sliderView.center.x = swipeBGImageVIew.center.x - minAdjust
                 }
                 
                 sender.setTranslation(CGPoint.zero, in: self.view)
+            } else if sender.state == UIGestureRecognizer.State.ended {
+                UIView.animate(withDuration: 0.1) {
+                    sliderView.center.x = self.swipeBGImageVIew.center.x - minAdjust
+                }
             }
         }
     }
