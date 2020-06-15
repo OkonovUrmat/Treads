@@ -337,6 +337,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="dQh-cI-VwL"/>
                     <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="sliderImageView" destination="x2D-tR-Gn7" id="Kt6-sR-9kY"/>
+                        <outlet property="swipeBGImageVIew" destination="b4j-5o-7oQ" id="sjS-jV-bfY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rNm-tp-dSn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
