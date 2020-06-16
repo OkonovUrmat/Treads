@@ -18,6 +18,11 @@ class CurrentRunVC: LocationVC {
     @IBOutlet weak var distanceLbl: UILabel!
     @IBOutlet weak var pauseBtn: UIButton!
     
+    var startLocation: CLLocation!
+    var lastLocation: CLLocation!
+    
+    var runDistance = 0.0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -72,7 +77,6 @@ class CurrentRunVC: LocationVC {
 }
 
 extension CurrentRunVC: CLLocationManagerDelegate {
-    
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         if status == .authorizedWhenInUse {
             checkLocationStatus()
@@ -82,5 +86,4 @@ extension CurrentRunVC: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
     }
-    
 }
