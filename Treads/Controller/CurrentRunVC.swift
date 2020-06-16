@@ -25,8 +25,18 @@ class CurrentRunVC: LocationVC {
     
     override func viewWillAppear(_ animated: Bool) {
         manager?.delegate = self
+        manager?.distanceFilter = 10
+        startRun()
+    }
+    
+    func startRun() {
+        manager?.startUpdatingLocation()
     }
 
+    func endRun() {
+        manager?.stopUpdatingLocation()
+    }
+    
     @objc func endRunSwiped(sender: UIPanGestureRecognizer) {
         let minAdjust: CGFloat = 80
         let maxAdjust: CGFloat = 128
@@ -61,4 +71,9 @@ extension CurrentRunVC: CLLocationManagerDelegate {
             checkLocationStatus()
         }
     }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        
+    }
+    
 }
