@@ -13,6 +13,10 @@ class CurrentRunVC: LocationVC {
 
     @IBOutlet weak var swipeBGImageVIew: UIImageView!
     @IBOutlet weak var sliderImageView: UIImageView!
+    @IBOutlet weak var durationLbl: UILabel!
+    @IBOutlet weak var paceLbl: UILabel!
+    @IBOutlet weak var distanceLbl: UILabel!
+    @IBOutlet weak var pauseBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +39,9 @@ class CurrentRunVC: LocationVC {
 
     func endRun() {
         manager?.stopUpdatingLocation()
+    }
+    
+    @IBAction func pauseBtnPressed(_ sender: Any) {
     }
     
     @objc func endRunSwiped(sender: UIPanGestureRecognizer) {

@@ -293,7 +293,7 @@
                                 </constraints>
                                 <state key="normal" image="pauseButton"/>
                                 <connections>
-                                    <action selector="pauseBtnPressed:" destination="hwJ-I5-UYs" eventType="touchUpInside" id="XM8-hG-wXB"/>
+                                    <action selector="pauseBtnPressed:" destination="hwJ-I5-UYs" eventType="touchUpInside" id="dee-t2-Wcv"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="END RUN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="2Qy-lV-HKM">
@@ -338,6 +338,10 @@
                     <navigationItem key="navigationItem" id="dQh-cI-VwL"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="distanceLbl" destination="5Uy-60-HrU" id="Ajs-wZ-JTK"/>
+                        <outlet property="durationLbl" destination="Q5K-cG-iU6" id="AgI-pT-j9K"/>
+                        <outlet property="paceLbl" destination="56v-as-VWJ" id="nEU-yK-9GA"/>
+                        <outlet property="pauseBtn" destination="9PX-kQ-BFk" id="riN-GG-AFd"/>
                         <outlet property="sliderImageView" destination="x2D-tR-Gn7" id="Kt6-sR-9kY"/>
                         <outlet property="swipeBGImageVIew" destination="b4j-5o-7oQ" id="sjS-jV-bfY"/>
                     </connections>
