@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 
 class CurrentRunVC: LocationVC {
 
@@ -20,6 +21,10 @@ class CurrentRunVC: LocationVC {
         sliderImageView.addGestureRecognizer(swipeGesture)
         sliderImageView.isUserInteractionEnabled = true
         swipeGesture.delegate = self as? UIGestureRecognizerDelegate
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        manager?.delegate = self
     }
 
     @objc func endRunSwiped(sender: UIPanGestureRecognizer) {
@@ -46,5 +51,9 @@ class CurrentRunVC: LocationVC {
             }
         }
     }
+    
+}
+
+extension CurrentRunVC: CLLocationManagerDelegate {
     
 }
