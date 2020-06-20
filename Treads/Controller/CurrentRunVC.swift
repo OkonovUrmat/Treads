@@ -23,6 +23,7 @@ class CurrentRunVC: LocationVC {
     var timer = Timer()
     
     var runDistance = 0.0
+    var pace = 0
     var counter = 0
     
     override func viewDidLoad() {
@@ -59,8 +60,9 @@ class CurrentRunVC: LocationVC {
         durationLbl.text = counter.formatTimeDurationToString()
     }
     
-    func calculatePace(time second: Int, miles: Double) -> String {
-        
+    func calculatePace(time seconds: Int, miles: Double) -> String {
+        pace = Int(Double(seconds) / miles)
+        return pace.formatTimeDurationToString()
     }
     
     @IBAction func pauseBtnPressed(_ sender: Any) {
