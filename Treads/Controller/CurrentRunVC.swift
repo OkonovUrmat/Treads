@@ -59,6 +59,10 @@ class CurrentRunVC: LocationVC {
         durationLbl.text = counter.formatTimeDurationToString()
     }
     
+    func calculatePace(time second: Int, miles: Double) -> String {
+        
+    }
+    
     @IBAction func pauseBtnPressed(_ sender: Any) {
     }
     
