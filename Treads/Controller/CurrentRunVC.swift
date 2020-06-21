@@ -49,6 +49,7 @@ class CurrentRunVC: LocationVC {
 
     func endRun() {
         manager?.stopUpdatingLocation()
+        // Add our object to Realm
     }
     
     func pauseRun() {
@@ -92,7 +93,7 @@ class CurrentRunVC: LocationVC {
                     sliderView.center.x = sliderView.center.x + translation.x
                 } else if sliderView.center.x >= (swipeBGImageVIew.center.x + maxAdjust){
                     sliderView.center.x = swipeBGImageVIew.center.x + maxAdjust
-                    //End Run Code
+                    endRun()
                     dismiss(animated: true, completion: nil)
                 } else {
                     sliderView.center.x = swipeBGImageVIew.center.x - minAdjust
