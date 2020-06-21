@@ -49,6 +49,10 @@ class CurrentRunVC: LocationVC {
     func endRun() {
         manager?.stopUpdatingLocation()
     }
+    
+    func pauseRun() {
+        
+    }
 
     func startTimer() {
         durationLbl.text = counter.formatTimeDurationToString()
