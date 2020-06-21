@@ -52,6 +52,7 @@ class CurrentRunVC: LocationVC {
     
     func pauseRun() {
         timer.invalidate()
+        manager?.stopUpdatingLocation()
     }
 
     func startTimer() {
