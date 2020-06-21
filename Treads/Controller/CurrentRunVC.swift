@@ -51,6 +51,8 @@ class CurrentRunVC: LocationVC {
     }
     
     func pauseRun() {
+        startLocation = nil
+        lastLocation = nil
         timer.invalidate()
         manager?.stopUpdatingLocation()
         pauseBtn.setImage(#imageLiteral(resourceName: "resumeButton"), for: .normal)
