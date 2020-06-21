@@ -74,6 +74,11 @@ class CurrentRunVC: LocationVC {
     }
     
     @IBAction func pauseBtnPressed(_ sender: Any) {
+        if timer.isValid {
+            pauseRun()
+        } else {
+            startRun()
+        }
     }
     
     @objc func endRunSwiped(sender: UIPanGestureRecognizer) {
