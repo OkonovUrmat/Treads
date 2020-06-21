@@ -51,7 +51,7 @@ class CurrentRunVC: LocationVC {
     }
     
     func pauseRun() {
-        
+        timer.invalidate()
     }
 
     func startTimer() {
