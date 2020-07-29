@@ -32,4 +32,8 @@ class Run: Object {
         self.distance = distance
         self.duration = duration
     }
+    
+    static func addRunToRealm(pace: Int, distance: Double, duration: Int) {
+        
+    }
 }
