@@ -36,6 +36,9 @@
 		372B16462496104E006F03E7 /* LocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372B16452496104E006F03E7 /* LocationVC.swift */; };
 		37522F0B24D0667C006AFC3C /* Run.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37522F0A24D0667C006AFC3C /* Run.swift */; };
 		375B5366249A5C8500E65E7B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375B5365249A5C8500E65E7B /* Extensions.swift */; };
+		37B2B41D24DAB4DA00DB2634 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B2B41C24DAB4DA00DB2634 /* Location.swift */; };
+		37B2B41F24DAB4F100DB2634 /* RunLogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B2B41E24DAB4F100DB2634 /* RunLogCell.swift */; };
+		37B2B42124DAB56100DB2634 /* RealmConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B2B42024DAB56100DB2634 /* RealmConfig.swift */; };
 		37F664CB2497A854002D8B88 /* CurrentRunVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F664CA2497A854002D8B88 /* CurrentRunVC.swift */; };
 		AAE39F46B53F028FB60939AB /* Pods_Treads.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B88B4047DB673AAD976B937B /* Pods_Treads.framework */; };
 /* End PBXBuildFile section */
@@ -72,6 +75,9 @@
 		372B16452496104E006F03E7 /* LocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVC.swift; sourceTree = "<group>"; };
 		37522F0A24D0667C006AFC3C /* Run.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Run.swift; sourceTree = "<group>"; };
 		375B5365249A5C8500E65E7B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		37B2B41C24DAB4DA00DB2634 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		37B2B41E24DAB4F100DB2634 /* RunLogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunLogCell.swift; sourceTree = "<group>"; };
+		37B2B42024DAB56100DB2634 /* RealmConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmConfig.swift; sourceTree = "<group>"; };
 		37F664CA2497A854002D8B88 /* CurrentRunVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentRunVC.swift; sourceTree = "<group>"; };
 		61B226BE951855944882F8F8 /* Pods-Treads.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Treads.debug.xcconfig"; path = "Target Support Files/Pods-Treads/Pods-Treads.debug.xcconfig"; sourceTree = "<group>"; };
 		B88B4047DB673AAD976B937B /* Pods_Treads.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Treads.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -181,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				3712335024D1BC0F00749DF7 /* Constants.swift */,
+				37B2B42024DAB56100DB2634 /* RealmConfig.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -199,6 +206,7 @@
 		3726E00A249125D5006A543E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				37B2B41E24DAB4F100DB2634 /* RunLogCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -207,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				37522F0A24D0667C006AFC3C /* Run.swift */,
+				37B2B41C24DAB4DA00DB2634 /* Location.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -222,7 +231,7 @@
 				3726DFE9249123A9006A543E /* Sources */,
 				3726DFEA249123A9006A543E /* Frameworks */,
 				3726DFEB249123A9006A543E /* Resources */,
-				674AC9101B24B700F047091A /* [CP] Embed Pods Frameworks */,
+				16B9AE638601C67448275FFD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -298,7 +307,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		674AC9101B24B700F047091A /* [CP] Embed Pods Frameworks */ = {
+		16B9AE638601C67448275FFD /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -346,13 +355,16 @@
 			files = (
 				372B16462496104E006F03E7 /* LocationVC.swift in Sources */,
 				37522F0B24D0667C006AFC3C /* Run.swift in Sources */,
+				37B2B41D24DAB4DA00DB2634 /* Location.swift in Sources */,
 				3726DFF7249123A9006A543E /* RunLogVC.swift in Sources */,
 				3726DFF5249123A9006A543E /* BeginRunVC.swift in Sources */,
 				3726DFF1249123A9006A543E /* AppDelegate.swift in Sources */,
+				37B2B41F24DAB4F100DB2634 /* RunLogCell.swift in Sources */,
 				37F664CB2497A854002D8B88 /* CurrentRunVC.swift in Sources */,
 				3726DFF3249123A9006A543E /* SceneDelegate.swift in Sources */,
 				375B5366249A5C8500E65E7B /* Extensions.swift in Sources */,
 				3712335124D1BC0F00749DF7 /* Constants.swift in Sources */,
+				37B2B42124DAB56100DB2634 /* RealmConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
