@@ -17,6 +17,7 @@ extension Double {
 }
 
 extension Int {
+    // Make format time duration to String 
     func formatTimeDurationToString() -> String {
         let durationHours = self / 3600
         let durationMinutes = (self % 3600) / 60
