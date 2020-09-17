@@ -36,6 +36,7 @@ extension Int {
 }
 
 extension NSDate {
+    // Return date format
     func getDateString() -> String {
         let calendar = Calendar.current
         let month = calendar.component(.month, from: self as Date)
